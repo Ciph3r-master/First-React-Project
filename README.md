@@ -14,6 +14,7 @@ projet.`
 - Personnalisation de la grille (nombre de bombes, taille de la grille)
 - Différentes difficultés avec un écran d'accueil
 - Retirer les indices pour trouver les bombes (dans le code source les div des bombes ne sont pas identiques aux cases)
+- Clique droit pour poser un drapeau et rendre le clique gauche impossible appart en le retirant (à nouveau clique droit)
 
 #### Autres jeux :
 - Sudoku
