@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+body
+{
+    background-color: #2e2b2b;
+}
+
+header, section
+{
+    height: 100vh;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header > h1
+{
+    font-size: 40px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    background: linear-gradient(90deg, #07C8F9 0%, #09A6F3 30% , #0C63E7 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.button
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  width: 125px;
+  height: 50px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  border-radius: 10px;
+  border: 3px solid rgba(10, 10, 10);
+  background-color: rgb(23, 37, 161);
+}
+
+
+#duel
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+
+    font-size: 40px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+}
+
+#duel > h2
+{
+  background: linear-gradient(90deg, #07C8F9 0%, #09A6F3 30% , #0C63E7 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.games
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 70vw;
+}
+
+.games > *
+{
+    height: 15vw;
+    width: 15vw;
+    border: 1px solid black;
+}
+
+.minesweeper-grid
+{
+  cursor: default;
+  display: grid;
+  color: white;
+  width: 500px;
+  height: 500px;
+  background-color: #a1cf55;
+  font-family: 'Open Sans';
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.minesweeper-grid > .cell
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-size: 80%;
+}
+
+.cell-visible
+{
+  
+-webkit-box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.28), inset 0px 11px 19px 7px rgba(0,0,0,0.07); 
+box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.28), inset 0px 11px 19px 7px rgba(0,0,0,0.07);
+}
+
+.bomb > img
+{
+  width: 30px;
+  height: 30px;
+  z-index: 100;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  opacity: 0.2;
+  background: #424242;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

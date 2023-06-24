@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import Button from "./Button";
+import MineSweeper from "./MineSweeper";
 
 function App() {
+
+  const gameRef = useRef(null)
+  const executeScroll = () => gameRef.current.scrollIntoView()  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+      <header>
+
+        <h1>Bienvenue chez moi</h1>
+
+        <Button label="Mes jeux" onClick={executeScroll}/>
       </header>
+
+      <section id="duel">
+
+        <h2>Voulez-vous me défier ?</h2>
+
+
+        <div ref={gameRef} className="games">
+          <MineSweeper params={{x: 10, y: 10, bombs: 10}} />
+        </div>
+
+      </section>
+
+
     </div>
   );
 }
